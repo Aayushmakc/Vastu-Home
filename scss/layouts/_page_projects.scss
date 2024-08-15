@@ -143,6 +143,28 @@
       }
     }
   }
+  @media screen and  (max-width: 768px){
+    .project-page{
+      .container-cards{
+        .row{
+          padding: 0 !important;
+          .col-md-4{
+            padding: 10px;
+          }
+        .card{
+          .card-body{
+            .card-text{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  
+    }
+  }
+    
+  
   
   @media screen and (max-width: 576px) {
   .project-page{

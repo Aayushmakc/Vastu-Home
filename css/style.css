@@ -567,11 +567,38 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
   text-align: left;
 }
 
+.statistic-first {
+  width: 35%;
+  margin: 0 auto;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 60px;
+  margin-bottom: -50px;
+  z-index: 3;
+}
+.statistic-first h3 {
+  padding-top: 20px;
+  font-weight: 500;
+}
+.statistic-first .btn-primary {
+  width: 25%;
+  margin: 0 auto;
+  background-color: #85BC03;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.statistic-first .btn-primary:hover {
+  background-color: #618a02;
+  color: white;
+}
+
 @media screen and (max-width: 1480px) {
-  .statistic {
+  .statistic-first {
     width: 40%;
   }
-  .statistic .btn-primary {
+  .statistic-first .btn-primary {
     width: 100px;
     padding: 10px !important;
   }
@@ -591,10 +618,10 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
   .index-about .container .flex-container .three-rows-container {
     width: 100%;
   }
-  .statistic {
+  .statistic-first {
     width: 90%;
   }
-  .statistic .btn-primary {
+  .statistic-first .btn-primary {
     width: 130px;
   }
 }
@@ -1106,76 +1133,86 @@ footer .footer-bottom .block a:hover {
   background-color: #fff;
 }
 .about-page .container {
+  padding-top: 80px;
+}
+.about-page .container .about-container {
   display: flex;
-  margin-top: 60px;
   justify-content: space-between;
 }
-.about-page .container .about-left {
-  width: 41%;
-  padding: 30px;
-}
-.about-page .container .about-left .block-heading {
-  color: #85BC03;
-}
-.about-page .container .about-left .main-description {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: 400;
-}
-.about-page .container .hero-banner-image {
+.about-page .container .about-container .hero-banner-image {
   width: 600px;
   height: 400px;
 }
-.about-page .container .hero-banner-image img {
+.about-page .container .about-container .hero-banner-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px 200px 10px 10px;
+  border-radius: 20px 200px 20px 20px;
 }
-.about-page .container .hero-banner-image img:hover {
+.about-page .container .about-container .hero-banner-image img:hover {
   margin-top: 10px;
-  border-radius: 10px 10px 10px 200px;
+  border-radius: 10px 10px 200px 10px;
 }
-.about-page .container {
+.about-page .container .about-container .about-left {
+  width: 40%;
+}
+.about-page .container .about-container .about-left .block-heading {
+  color: #85BC03;
+}
+.about-page .container .about-container .about-left .main-description {
+  margin-top: 10px;
+  font-weight: 400;
+}
+.about-page .container .about-banner {
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
 }
-.about-page .container .hero-banner-image {
+.about-page .container .about-banner .about-left {
+  margin-top: 60px;
+  width: 40%;
+}
+.about-page .container .about-banner .about-left .block-heading {
+  color: #85BC03;
+}
+.about-page .container .about-banner .about-left .main-description {
+  margin-top: 10px;
+  font-weight: 400;
+}
+.about-page .container .about-banner .hero-banner-image {
   width: 600px;
   height: 400px;
 }
-.about-page .container .hero-banner-image img {
+.about-page .container .about-banner .hero-banner-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 200px 20px 20px 20px;
 }
-.about-page .container .hero-banner-image img:hover {
+.about-page .container .about-banner .hero-banner-image img:hover {
   margin-top: 10px;
   border-radius: 10px 10px 200px 10px;
 }
-.about-page .container .about-left {
-  width: 41%;
-}
-.about-page .service-container {
+.about-page .container .service-container {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
 }
-.about-page .service-container .service-content .block-heading {
+.about-page .container .service-container .service-content .block-heading {
   color: #85BC03;
 }
-.about-page .service-container .service-content .main-description {
+.about-page .container .service-container .service-content .main-description {
   margin-top: 6px;
 }
-.about-page .service-container .service-grid {
-  margin-top: 40px;
+.about-page .container .service-container .service-grid {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   z-index: 2;
   order: 1;
 }
-.about-page .service-container .service-grid .service-item {
+.about-page .container .service-container .service-grid .service-item {
   background-color: #fff;
   border-bottom: 3px solid #85BC03;
   border-left: 1px solid #85BC03;
@@ -1189,172 +1226,227 @@ footer .footer-bottom .block a:hover {
   z-index: 2;
   margin-left: 40px;
 }
-.about-page .service-container .service-grid .service-item img {
+.about-page .container .service-container .service-grid .service-item img {
   width: 40px;
   height: 40px;
 }
-.about-page .service-container .service-grid .service-item p {
+.about-page .container .service-container .service-grid .service-item p {
   font-size: 1.2rem;
   color: #000000;
   font-weight: 700;
   margin-left: 20px;
 }
-.about-page .message .about-text {
+.about-page .container .message {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.about-page .container .message .about-text {
   width: 41%;
   margin-top: 60px;
 }
-.about-page .message .about-text .block-heading {
+.about-page .container .message .about-text .block-heading {
   color: #85BC03;
 }
-.about-page .message .about-text .main-description {
+.about-page .container .message .about-text .main-description {
   margin-top: 10px;
 }
-.about-page .message .banner-image {
+.about-page .container .message .banner-image {
   margin-top: 20px;
   width: 500px;
   height: 350px;
 }
-.about-page .message .banner-image img {
+.about-page .container .message .banner-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 10px 200px;
 }
-.about-page .team {
-  display: flex;
-  flex-direction: column;
+.about-page .container .team {
+  margin-top: 40px;
 }
-.about-page .team .team-content .block-heading {
+.about-page .container .team .team-content .block-heading {
   color: #85BC03;
   font-size: 35px;
   margin-bottom: 20px;
 }
-.about-page .team .rows {
+.about-page .container .team .rows {
   display: flex;
   justify-content: space-between;
 }
-.about-page .team .rows .team-card {
+.about-page .container .team .rows .team-card {
   margin-left: 10px;
 }
-.about-page .team .rows .team-card .cards {
+.about-page .container .team .rows .team-card .cards {
   border: none;
   padding-left: 10px;
 }
-.about-page .team .rows .team-card .card-body {
+.about-page .container .team .rows .team-card .card-body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.about-page .team .rows .team-card .card-body .card-text {
+.about-page .container .team .rows .team-card .card-body .card-text {
   font-size: 16px;
   margin-top: 5px;
 }
 
+.statistic {
+  width: 40%;
+  margin: 0 auto;
+  height: 120px;
+  background-color: #F4F5F5;
+  border-radius: 60px;
+  border-bottom: 2px solid #85BC03;
+  margin-bottom: 30px;
+  z-index: 3;
+}
+.statistic h3 {
+  padding-top: 20px;
+  font-weight: 500;
+}
+.statistic .btn-primary {
+  width: 25%;
+  margin: 0 auto;
+  background-color: #85BC03;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.statistic .btn-primary:hover {
+  background-color: #618a02;
+  color: white;
+}
+
 @media screen and (max-width: 1400px) {
-  .about-page .container {
-    flex-direction: column;
-  }
-  .about-page .container .about-left {
-    flex-direction: column;
-    width: 80%;
-  }
-  .about-page .container .about-left .statistics .stats {
-    flex-direction: row !important;
-  }
-  .about-page .container .about-left .block-heading {
-    font-size: 38px;
-    margin: 0;
-  }
-  .about-page .container .about-left .main-description {
-    padding: 20px 0px;
-    margin: 0;
-  }
-  .about-page .container .hero-banner-image {
-    width: 70%;
-    height: 300px;
-  }
-  .about-page .container .hero-banner-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 10px 200px;
-  }
-  .about-page .container .hero-banner-image img:hover {
-    margin-top: 10px;
-  }
-  .about-page .container .about-text {
-    width: 100%;
-  }
-  .about-page .container .service-grid .service-item {
-    width: 90%;
-    max-width: 300px;
-    margin: 0 !important;
-    margin-bottom: 5px !important;
-  }
-}
-@media screen and (max-width: 1400px) and (max-width: 1400px) {
   .about-page .container .service-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-@media screen and (max-width: 1400px) and (max-width: 992px) {
-  .about-page .container {
-    flex-direction: column;
+@media screen and (max-width: 1024px) {
+  .about-page .container .about-container .about-left {
+    width: 50%;
   }
-  .about-page .container .about-left {
-    flex-direction: column;
-    width: 100%;
+  .about-page .container .about-container .about-left .block-heading {
+    font-size: 24px;
   }
-  .about-page .container .about-left .statistics {
-    width: 100%;
+  .about-page .container .about-container .about-left .main-description {
+    font-size: 16px;
   }
-  .about-page .container .about-left .statistics .stats {
-    flex-direction: row !important;
-  }
-  .about-page .container .about-left .block-heading {
-    font-size: 38px;
-    margin: 0;
-  }
-  .about-page .container .about-left .main-description {
-    padding: 20px 0px;
-    margin: 0;
-  }
-  .about-page .container .hero-banner-image {
-    width: 90%;
+  .about-page .container .about-container .hero-banner-image {
+    width: 45%;
     height: 300px;
   }
-  .about-page .container .hero-banner-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 10px 200px;
+  .about-page .container .about-banner .hero-banner-image {
+    width: 45%;
+    height: 300px;
   }
-  .about-page .container .hero-banner-image img:hover {
-    margin-top: 10px;
+  .about-page .container .about-banner .about-left {
+    width: 50%;
   }
-  .about-page .container .about-text {
-    width: 100%;
+  .about-page .container .about-banner .about-left .block-heading {
+    font-size: 24px;
+  }
+  .about-page .container .about-banner .about-left .main-description {
+    font-size: 16px;
   }
   .about-page .container .service-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .about-banner {
-    flex-direction: column-reverse !important;
+  .about-page .container .message .about-text {
+    width: 50%;
   }
-  .team .rows {
-    width: 100%;
-    max-width: 300px;
-    flex-direction: column;
+  .about-page .container .message .about-text .block-heading {
+    font-size: 24px;
+  }
+  .about-page .container .message .about-text .main-description {
+    font-size: 16px;
+  }
+  .about-page .container .message .banner-image {
+    width: 35%;
+    height: 300px;
+  }
+  .statistic {
+    width: 50%;
   }
 }
-@media screen and (max-width: 1400px) and (max-width: 768px) {
-  .about-page .container .service-grid {
+@media screen and (max-width: 768px) {
+  .about-page .container .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-page .container .about-container .about-left {
+    width: 90%;
+  }
+  .about-page .container .about-container .about-left .block-heading {
+    font-size: 26px;
+  }
+  .about-page .container .about-container .about-left .main-description {
+    font-size: 18px;
+  }
+  .about-page .container .about-container .hero-banner-image {
+    margin-top: 30px;
+    width: 600px;
+    height: 400px;
+  }
+  .about-page .container .about-container .hero-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 200px 20px 20px;
+  }
+  .about-page .container .about-container .hero-banner-image img:hover {
+    margin-top: 10px;
+    border-radius: 10px 10px 200px 10px;
+  }
+  .about-page .container .about-banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-page .container .about-banner .hero-banner-image {
+    margin-top: 30px;
+    width: 600px;
+    height: 400px;
+  }
+  .about-page .container .about-banner .hero-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 200px 20px 20px;
+  }
+  .about-page .container .about-banner .hero-banner-image img:hover {
+    margin-top: 10px;
+    border-radius: 10px 10px 200px 10px;
+  }
+  .about-page .container .about-banner .about-left {
+    width: 90%;
+  }
+  .about-page .container .about-banner .about-left .block-heading {
+    font-size: 26px;
+  }
+  .about-page .container .about-banner .about-left .main-description {
+    font-size: 18px;
+  }
+  .about-page .container .service-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .about-page .container .service-container .service-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .about-page .container .service-container .service-grid .service-item {
+    width: 300px;
+  }
+  .statistic {
+    width: 80%;
   }
 }
 .project-page {
@@ -1468,6 +1560,17 @@ footer .footer-bottom .block a:hover {
   }
   .project-page .hero-banner .hero-banner-image img:hover {
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-page .container-cards .row {
+    padding: 0 !important;
+  }
+  .project-page .container-cards .row .col-md-4 {
+    padding: 10px;
+  }
+  .project-page .container-cards .row .card .card-body .card-text {
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {

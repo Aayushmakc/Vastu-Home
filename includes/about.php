@@ -37,12 +37,13 @@
         </div>
     </div>
 </section>
-<!-- Statistics Section
-<section class="statistic">
+
+<!-- Statistics Section -->
+<section class="statistic-first">
         <div class="container">
             <div class="row text-center">
                 <h3>Get A Quote For Your Project</h3>
                 <a class="btn btn-primary" href="#" role="button">Free Quote</a>
             </div>
         </div>
-    </section> -->
+    </section>

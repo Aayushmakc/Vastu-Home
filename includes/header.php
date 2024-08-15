@@ -36,7 +36,7 @@ $co        =    "Bastu Homes";
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="icon" href="./images/Favicon.png" type="image/png">
 
 
 

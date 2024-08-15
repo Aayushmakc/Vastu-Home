@@ -70,39 +70,39 @@
     }
   }
   
-  // .statistic {
-  //   width: 35%;
-  //   margin: 0 auto;
-  //   height: 120px;
-  //   background-color: $white;
-  //   border-radius: 60px;
-  //   margin-bottom: -50px;
-  //   z-index: 3;
+  .statistic-first {
+    width: 35%;
+    margin: 0 auto;
+    height: 120px;
+    background-color: $white;
+    border-radius: 60px;
+    margin-bottom: -50px;
+    z-index: 3;
   
-  //   h3 {
-  //     padding-top: 20px;
-  //     font-weight: 500;
-  //   }
+    h3 {
+      padding-top: 20px;
+      font-weight: 500;
+    }
   
-  //   .btn-primary {
-  //     width: 25%;
-  //     margin: 0 auto;
-  //     background-color: $primaryColor;
-  //     color: $white;
-  //     font-size: 14px;
-  //     border-radius: 15px;
-  //     margin-top: 10px;
+    .btn-primary {
+      width: 25%;
+      margin: 0 auto;
+      background-color: $primaryColor;
+      color: $white;
+      font-size: 14px;
+      border-radius: 15px;
+      margin-top: 10px;
   
-  //     &:hover {
-  //       background-color: darken($primaryColor, 10%);
-  //       color: lighten($white, 10%);
-  //     }
-  //   }
+      &:hover {
+        background-color: darken($primaryColor, 10%);
+        color: lighten($white, 10%);
+      }
+    }
     
-  // }
+  }
 
   @media screen and (max-width: 1480px) {
-    .statistic {
+    .statistic-first {
       width: 40%;
   
       .btn-primary {
@@ -133,7 +133,7 @@
       }
     }
   
-    .statistic {
+    .statistic-first {
       width: 90%;
   
       .btn-primary {
