@@ -17,24 +17,24 @@
                 <img src="./images/banner1.png" alt="">
             </div>
         </div>
-        <!-- <section class="statistic">
-            <div class="outer-container">
-                <div class="inner-container">
-                    <div class="stat-item item-1">
-                        <h2>100+</h2>
-                        <p>Project <br>Completed</p>
-                    </div>
-                    <div class="stat-item item-2">
-                        <h2>226</h2>
-                        <p>Total <br>Employees</p>
-                    </div>
-                    <div class="stat-item item-3">
-                        <h2>100%</h2>
-                        <p>Satisfied <br> Clients</p>
-                    </div>
+        <!-- Statistics Section -->
+        <section class="statistics-second">
+            <div class="container">
+                <div class="stat-item item-1">
+                    <h2>100+</h2>
+                    <p>Project <br>Completed</p>
+                </div>
+                <div class="stat-item item-2">
+                    <h2>226</h2>
+                    <p>Total <br>Employees</p>
+                </div>
+                <div class="stat-item item-3">
+                    <h2>100%</h2>
+                    <p>Satisfied<br> Clients</p>
                 </div>
             </div>
-        </section> -->
+        </section>
+
         <div class=" about-banner">
 
             <div class="hero-banner-image">
@@ -153,15 +153,15 @@
     </div>
 
 </section>
-  <!-- Statistics Section -->
-    <section class="statistic">
-        <div class="container">
-            <div class="row text-center">
-                <h3>Start Your Dream Project With Us</h3>
-                <a class="btn btn-primary" href="#" role="button">Contact us</a>
-            </div>
+<!-- Statistics Section -->
+<section class="statistic">
+    <div class="container">
+        <div class="row text-center">
+            <h3>Start Your Dream Project With Us</h3>
+            <a class="btn btn-primary" href="#" role="button">Contact us</a>
         </div>
-    </section>
+    </div>
+</section>
 
 
 

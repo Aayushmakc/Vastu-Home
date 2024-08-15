@@ -495,9 +495,10 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .statistics {
-    width: 80%;
+    padding-left: 30px;
+    width: 70%;
     margin-top: -15px !important;
   }
 }
@@ -702,7 +703,8 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
     margin-bottom: 30px !important;
   }
   .index-project .container .container-card {
-    width: 100%;
+    margin-bottom: 10px;
+    width: 90%;
   }
   .index-project .container .container-card .card {
     width: 100% !important;
@@ -1321,6 +1323,38 @@ footer .footer-bottom .block a:hover {
   color: white;
 }
 
+.statistics-second {
+  background-color: #F4F5F5;
+  border-radius: 60px;
+  border-bottom: 1px solid #85BC03;
+  margin-top: -100px;
+  width: 50%;
+  height: 110px;
+}
+.statistics-second .container {
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+.statistics-second .container .stat-item {
+  flex: 1;
+  text-align: center;
+  padding-top: 20px;
+}
+.statistics-second .container .stat-item .item-1 {
+  padding-left: 20px;
+}
+.statistics-second .container .stat-item h2 {
+  font-size: 26px;
+  color: #85BC03;
+  margin-bottom: 5px;
+}
+.statistics-second .container .stat-item p {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1400px) {
   .about-page .container .service-grid {
     display: grid;
@@ -1406,6 +1440,7 @@ footer .footer-bottom .block a:hover {
     border-radius: 10px 10px 200px 10px;
   }
   .about-page .container .about-banner {
+    padding-top: 0;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -1446,7 +1481,13 @@ footer .footer-bottom .block a:hover {
     width: 300px;
   }
   .statistic {
-    width: 80%;
+    width: 60%;
+  }
+  .statistics-second {
+    padding-left: 30px;
+    margin-top: 30px !important;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 .project-page {
