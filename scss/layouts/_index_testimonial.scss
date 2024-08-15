@@ -1,0 +1,135 @@
+.index-testimonials {
+  background-image: 
+  linear-gradient(90deg, rgb(223, 224, 223, 0.9), rgba(255, 255, 255, 0.9)), 
+  url('../images/banner-bg.png');
+     padding: 80px 0px 80px 0px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  
+  
+     
+    .container{
+        display: flex;
+        justify-content:space-between;
+    .second-container{
+        width: 50%;
+        justify-content: space-between;
+        .col-md-6{
+        background-color: $white;
+        margin-left: 20px;
+         display: flex;
+         align-items: center;
+        width: 250px;
+        height: 250px;
+        padding:10px;
+        border-radius:10px 10px 10px 50px; 
+        border-left: 1px solid $primaryColor; 
+        border-bottom: 3px solid $primaryColor;
+        .card {
+          border: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height:80%;
+        }
+        .testimonial-card {
+        .card-img-top {
+          width:50px;
+          height:50px;
+          object-fit: cover;
+          border-radius: 100%;
+        
+      }
+        .card-title{
+         font-size: 18px;
+         font-weight: 600;
+         margin-top: 20px;
+        }
+        .card-text{
+          text-align: center;
+          font-size: 15px;
+          font-weight: 400;
+          width: 80%;
+        }
+        .card-subtitle{
+          font-weight: 600;
+          margin-top: 20px;
+        }
+
+
+        }
+
+        }
+       
+      }
+
+      .container-text{
+        z-index: 2;
+        margin-top: 50px;
+      
+       
+          h2{
+            color: $primaryColor;
+            font-weight: 600;
+             font-size: 38px !important;
+             margin-bottom: 10px;
+             text-align: left;
+        }
+        p{
+         font-size:1rem ;
+         font-weight: 400;
+         text-align: left;
+        }
+      } 
+    }
+
+    @media screen and (max-width: 1024px) {
+      .container {
+        display: flex;
+        .second-container {
+          width: 50%;
+          .col-md-6 {
+            margin-left: 0;
+            margin-bottom: 20px;
+          }
+  
+          .row {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 725px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+  
+        .container-text {
+          margin-bottom: 20px;
+          order: 1;
+          width: 100%;
+        }
+  
+        .second-container {
+          order: 2;
+          width: 100%;
+  
+          .col-md-6 {
+            width: 100%;
+            max-width: 100%;
+            margin-left: 0;
+            margin-bottom: 20px;
+          }
+  
+          .row {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+
+}
+

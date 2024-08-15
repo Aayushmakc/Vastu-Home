@@ -1,0 +1,134 @@
+.index-contact {
+  background-color: $white;
+  .container{
+      display: flex;
+      justify-content: space-between;
+      
+
+    .contact-content{
+      margin-top: 30px;
+      width: 30%;
+
+      .block-heading{
+        color: $primaryColor;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 35px;
+        margin-bottom: 20px;
+      }
+
+      .main-description{
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+   .form-container{
+        width :45%;
+
+      .input-row{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+
+         .input-group{
+          flex-basis: 45%;
+           
+          label{
+            margin-bottom: 6px;
+            display: block;
+            color: #8D8D8D;
+          }
+            input{
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid #8D8D8D;
+              outline :none;
+              padding-bottom: 5px;
+            }
+         }
+    }
+    .address-row{
+      margin-bottom: 20px;
+
+      .input-group{
+        flex-basis: 45%;
+
+        label{
+          margin-bottom: 6px;
+          display: block;
+          color: #8D8D8D;}
+
+          input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #8D8D8D;
+            outline :none;
+            padding-bottom: 5px;
+          }
+       }
+
+    }
+    .message-row{
+      margin-bottom: 20px;
+      .input-group{
+        flex-basis: 45%;
+
+        label{
+          margin-bottom: 6px;
+          display: block;
+          color: #8D8D8D;
+        }
+
+          textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #8D8D8D;
+            outline :none;
+            padding-bottom: 5px;
+          }
+       }
+
+    }
+    .btn{
+      color: $white;
+      background-color: $primaryColor;
+      margin-top: 10px;
+      float: right;
+    
+
+    }
+   
+   }
+
+       
+  }   
+  
+  
+}
+// Responsive.............
+@media screen and (max-width: 900px) {
+  .index-contact {
+    .container {
+      display: block;
+
+      .contact-content {
+        width: 100%;
+      }
+
+      .form-container {
+        width: 100%;
+
+        .btn {
+          display: flex;
+          float: none;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .main-description {
+      margin-bottom: 30px;
+    }
+  }
+}
