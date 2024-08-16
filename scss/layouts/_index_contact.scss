@@ -132,3 +132,17 @@
     }
   }
 }
+@media screen and (max-width :568px) {
+  .index-contact{
+    .container{
+      .contact-content{
+        padding: 0 20px;
+        margin-top: 0;
+      }
+      .form-container{
+        padding: 0 20px;
+      }
+    }
+  }
+  
+}
