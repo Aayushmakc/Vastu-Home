@@ -22,8 +22,8 @@ include 'includes/header.php'; ?>
           <div class="card">
             <img src="./images/cardimage.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br>See more...</p>
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br><a href="#" class="see-more">See more...</a>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ include 'includes/header.php'; ?>
             <img src="./images/cardimage.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Title</h5>
-              <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br>See more...</p>
+              <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br><a href="#" class="see-more">See more...</a>
             </div>
           </div>
         </div>
@@ -44,8 +44,8 @@ include 'includes/header.php'; ?>
           <div class="card">
             <img src="./images/cardimage.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br>See more...</p>
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br><a href="#" class="see-more">See more...</a>
             </div>
           </div>
         </div>
@@ -57,8 +57,8 @@ include 'includes/header.php'; ?>
           <div class="card">
             <img src="./images/cardimage.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br>See more...</p>
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br><a href="#" class="see-more">See more...</a>
             </div>
           </div>
         </div>
@@ -68,8 +68,8 @@ include 'includes/header.php'; ?>
           <div class="card">
             <img src="./images/cardimage.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br>See more...</p>
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br><a href="#" class="see-more">See more...</a>
             </div>
           </div>
         </div>
@@ -79,8 +79,8 @@ include 'includes/header.php'; ?>
           <div class="card">
             <img src="./images/cardimage.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br>See more...</p>
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Delivering exceptional construction services with precision and dedication.<br><br><a href="#" class="see-more">See more...</a>
             </div>
           </div>
         </div>

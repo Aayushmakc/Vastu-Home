@@ -5,54 +5,54 @@
     justify-content: space-between;
 
     .project-content{
-      width: 50%;
-      .block-heading{
-        color: $primaryColor;
-        font-size: 40px;
-        font-weight: 600;
-      }
-      .main-description{
-        font-size: 1rem;
-        font-weight: 400;
-        margin-top: 15px;
-      }
+      width: 32%;
+       .block-heading{
+          color: $primaryColor;
+          font-size: 40px;
+         font-weight: 600;
+       }
+       .main-description{
+         font-size: 1rem;
+         font-weight: 400;
+         margin-top: 15px;
+       }
 
-    }
-    .container-card{
-      width: 30%;
-      .card{
-        border-radius: 20px 20px 20px 60px;
-        border: none;
-          border-left: 1px solid $primaryColor;
-
-       .card-img-top{
-          width:100%;
-          padding: 20px;
-          background-color: $white;
-          border: none;
-          align-items: center;
-         }
-
-        .card-body{
-          border-radius: 0px 0px 0px 60px;
-          background-color: $bg;
-          border-bottom: 3px solid $primaryColor;
-          border-left: 1px solid $primaryColor;
-          padding-left: 30px;
-          .card-title{
-            font-weight: 600;
-          }
-          .card-text{
-            font-weight: 400;
-            font-size: 16px;
-          }
-        }
-      
      }
+     .container-card{
+      width: 32%;
+       .card{
+         border-radius: 20px 20px 20px 60px;
+         border: none;
+           border-left: 1px solid $primaryColor;
+
+        .card-img-top{
+           width:100%;
+           padding: 20px;
+           background-color: $white;
+           border: none;
+           align-items: center;
+          }
+
+         .card-body{
+           border-radius: 0px 0px 0px 60px;
+           background-color: $bg;
+           border-bottom: 3px solid $primaryColor;
+          border-left: 1px solid $primaryColor;
+           padding-left: 30px;
+           .card-title{
+             font-weight: 600;
+           }
+           .card-text{
+             font-weight: 400;
+             font-size: 16px;
+           }
+         }
+      
+      }
 
      .loader {
       margin-top:65px;
-      
+      margin-right: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -103,3 +103,16 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 568px){
+  .index-project{
+    .container{
+      .project-content{
+        padding:0 20px;
+      }
+      .container-card{
+        padding: 0 20px;
+      }
+    }
+  }
+}
+  

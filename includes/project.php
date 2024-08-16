@@ -13,7 +13,7 @@
            <div class="card-body">
               <h5 class="card-title"> Title</h5>
                <p class="card-text">Delivering exceptional construction services with precision and dedication
-               Loren Ipsum Each project reflects our commitment  to quality and innova....<br><br>See more...
+               Loren Ipsum Each project reflects our commitment  to quality and innova....<br><br><a href="#" class="see-more">See more..</a>
               </p>
                
             </div>
