@@ -840,7 +840,7 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
 }
 .index-service {
   background-image: url("../images/banner-bg.png");
-  padding: 80px 0px 80px 0px;
+  padding: 80px 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -876,12 +876,13 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
   border-bottom: 3px solid #85BC03;
   border-left: 1px solid #85BC03;
   border-radius: 0 0 0 50px;
-  width: calc(32% - 20px);
+  width: calc(33.33% - 20px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
   z-index: 2;
+  transition: width 0.3s ease;
 }
 .index-service .container .service-grid .service-item img {
   width: 40px;
@@ -910,14 +911,12 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
 }
 @media (max-width: 1024px) {
   .index-service .container .service-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   .index-service .container .service-grid .service-item {
-    width: 200px;
-    max-width: 300px;
-    margin: 0 !important;
-    margin-bottom: 5px !important;
+    width: calc(50% - 20px);
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 900px) {
@@ -926,18 +925,16 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
     align-items: center;
   }
   .index-service .container .service-grid {
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .index-service .container .service-grid .service-item {
-    width: 800px;
+    width: 100%;
     max-width: 300px;
-    margin-bottom: 5px !important;
+    margin-bottom: 10px;
   }
   .index-service .container .services-text {
     width: 100%;
-    z-index: 2;
     order: 1;
   }
   .index-service .container .service-grid {
@@ -945,32 +942,23 @@ header.fixed-header .navbar .offcanvas .offcanvas-body .nav-btn {
   }
 }
 @media (max-width: 768px) {
-  .index-service .container {
-    flex-direction: column;
-    align-items: center;
-  }
   .index-service .container .service-grid {
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .index-service .container .service-grid .service-item {
-    width: 800px;
-    max-width: 300px;
-    margin-bottom: 5px !important;
-  }
-  .index-service .container .services-text {
     width: 100%;
-    z-index: 2;
-    order: 1;
-  }
-  .index-service .container .service-grid {
-    order: 2;
+    max-width: 300px;
+    margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 568px) {
+@media (max-width: 568px) {
   .index-service .container .services-text {
     margin-top: -40px;
+    text-align: center;
+  }
+  .index-service .container .service-grid .service-item {
+    width: 100%;
   }
 }
 
