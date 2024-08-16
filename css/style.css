@@ -1166,7 +1166,7 @@ footer .footer-bottom .block a:hover {
   font-weight: 400;
 }
 .about-page .container .about-banner {
-  padding-top: 40px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -1220,7 +1220,6 @@ footer .footer-bottom .block a:hover {
   border-left: 1px solid #85BC03;
   border-radius: 0 0 0 50px;
   width: calc(19% - 20px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1324,11 +1323,12 @@ footer .footer-bottom .block a:hover {
 }
 
 .statistics-second {
+  padding-left: 10px;
   background-color: #F4F5F5;
   border-radius: 60px;
   border-bottom: 1px solid #85BC03;
-  margin-top: -100px;
-  width: 50%;
+  margin-top: -180px;
+  width: 38%;
   height: 110px;
 }
 .statistics-second .container {
@@ -1388,10 +1388,6 @@ footer .footer-bottom .block a:hover {
   .about-page .container .about-banner .about-left .main-description {
     font-size: 16px;
   }
-  .about-page .container .service-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
   .about-page .container .message .about-text {
     width: 50%;
   }
@@ -1405,8 +1401,21 @@ footer .footer-bottom .block a:hover {
     width: 35%;
     height: 300px;
   }
+  .about-page .container .service-container .service-grid .service-item {
+    width: 200px;
+    margin-left: 0;
+  }
   .statistic {
     width: 50%;
+  }
+  .statistics-second {
+    padding-left: 10px;
+    background-color: #F4F5F5;
+    border-radius: 60px;
+    border-bottom: 1px solid #85BC03;
+    margin-top: -100px;
+    width: 50%;
+    height: 110px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1440,7 +1449,7 @@ footer .footer-bottom .block a:hover {
     border-radius: 10px 10px 200px 10px;
   }
   .about-page .container .about-banner {
-    padding-top: 0;
+    margin-top: 0;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -1476,18 +1485,72 @@ footer .footer-bottom .block a:hover {
   .about-page .container .service-container .service-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
   }
   .about-page .container .service-container .service-grid .service-item {
     width: 300px;
   }
+  .about-page .container .team .rows {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
   .statistic {
-    width: 60%;
+    width: 70%;
   }
   .statistics-second {
     padding-left: 30px;
-    margin-top: 30px !important;
-    width: 70%;
+    margin-top: 20px !important;
+    width: 80%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 568px) {
+  .about-page .container .about-container .hero-banner-image {
+    width: 90%;
+  }
+  .about-page .container .about-banner {
+    margin-top: -20px;
+  }
+  .about-page .container .about-banner .hero-banner-image {
+    width: 90%;
+  }
+  .about-page .container .service-container .service-content {
+    margin-top: 5px;
+    justify-content: center;
+    width: 90%;
+  }
+  .about-page .container .service-container .service-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .about-page .container .service-container .service-grid .service-item {
+    width: 300px;
+    justify-content: start;
+    padding-left: 40px;
+    gap: 40px;
+  }
+  .about-page .container .message {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+  .about-page .container .message .about-text {
+    width: 90%;
+  }
+  .about-page .container .message .banner-image {
+    width: 90%;
+  }
+  .about-page .statistics-second {
+    width: 90%;
+    margin-top: 30px !important;
+  }
+  .statistic {
+    width: 90%;
+    height: 110px;
+  }
+  .statistic .container .btn-primary {
+    padding: 10px;
   }
 }
 .project-page {
@@ -1691,6 +1754,8 @@ footer .footer-bottom .block a:hover {
 .page-contact .container .contact-boxpage {
   margin-top: 30px;
   display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
 }
 .page-contact .container .contact-boxpage .contact-left {
   height: 450px;
@@ -1714,6 +1779,7 @@ footer .footer-bottom .block a:hover {
 }
 .page-contact .container .contact-boxpage .contact-left .social-icons {
   text-align: left;
+  margin-top: 20px;
 }
 .page-contact .container .contact-boxpage .contact-left .social-icons a {
   display: inline-block;
@@ -1732,12 +1798,15 @@ footer .footer-bottom .block a:hover {
 .page-contact .container .contact-boxpage .contact-left ul {
   margin-top: 40px;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 30px;
   line-height: 70px;
 }
+.page-contact .container .contact-boxpage .contact-left ul .fas {
+  padding-right: 20px;
+}
 .page-contact .container .contact-boxpage .contact-right {
-  flex-basis: 50%;
-  padding: 40px 60px;
+  flex-basis: 60%;
+  padding: 40px 80px;
 }
 .page-contact .container .contact-boxpage .contact-right .input-row {
   display: flex;
@@ -1750,12 +1819,12 @@ footer .footer-bottom .block a:hover {
 .page-contact .container .contact-boxpage .contact-right .input-row .input-group label {
   margin-bottom: 6px;
   display: block;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .page-contact .container .contact-boxpage .contact-right .input-row .input-group input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #8D8D8D;
+  border-bottom: 1px solid #8d8d8d;
   outline: none;
   padding-bottom: 5px;
 }
@@ -1768,12 +1837,12 @@ footer .footer-bottom .block a:hover {
 .page-contact .container .contact-boxpage .contact-right .address-row .input-group label {
   margin-bottom: 6px;
   display: block;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .page-contact .container .contact-boxpage .contact-right .address-row .input-group input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #8D8D8D;
+  border-bottom: 1px solid #8d8d8d;
   outline: none;
   padding-bottom: 5px;
 }
@@ -1786,12 +1855,12 @@ footer .footer-bottom .block a:hover {
 .page-contact .container .contact-boxpage .contact-right .message-row .input-group label {
   margin-bottom: 6px;
   display: block;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .page-contact .container .contact-boxpage .contact-right .message-row .input-group textarea {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #8D8D8D;
+  border-bottom: 1px solid #8d8d8d;
   outline: none;
   padding-bottom: 5px;
 }
@@ -1802,7 +1871,19 @@ footer .footer-bottom .block a:hover {
   float: right;
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 1024px) {
+  .page-contact .container .contact-boxpage .contact-left {
+    flex-basis: 40%;
+  }
+  .page-contact .container .contact-boxpage .contact-right {
+    flex-basis: 60%;
+    padding: 40px 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-contact {
+    padding: 80px 20px;
+  }
   .page-contact .container .contact-boxpage {
     display: block;
   }
@@ -1812,6 +1893,46 @@ footer .footer-bottom .block a:hover {
   }
   .page-contact .container .contact-boxpage .contact-right {
     padding: 20px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .page-contact {
+    padding: 50px 0;
+  }
+  .page-contact .container .contact-boxpage {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-contact .container .contact-boxpage .contact-left {
+    margin: 0;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 20px;
+    line-height: 30px;
+  }
+  .page-contact .container .contact-boxpage .contact-left h3 {
+    padding-top: 20px;
+  }
+  .page-contact .container .contact-boxpage .contact-right {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  .page-contact .container .contact-boxpage .contact-right form .input-row,
+  .page-contact .container .contact-boxpage .contact-right form .address-row,
+  .page-contact .container .contact-boxpage .contact-right form .message-row {
+    flex-direction: column;
+  }
+  .page-contact .container .contact-boxpage .contact-right form .input-row .input-group,
+  .page-contact .container .contact-boxpage .contact-right form .address-row .input-group,
+  .page-contact .container .contact-boxpage .contact-right form .message-row .input-group {
+    width: 100%;
+  }
+  .page-contact .container .contact-boxpage .contact-right form .btn {
+    width: 100%;
+    float: none;
+    text-align: center;
   }
 }
 
